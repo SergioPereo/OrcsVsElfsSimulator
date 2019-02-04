@@ -23,14 +23,12 @@ public class Elf extends Creature{
 		this.setIsFigthing(true);
 		orc.setIsFigthing(true);
 		double intelligenceElf = Math.random();
-		//System.out.println(intelligenceElf);
 		if(intelligenceElf < 0.5) {
 			this.setPower(this.getMagic()+(Math.random()*15));
 		} else {
 			this.setPower(this.getAttack() + 5);
 		}
 		double intelligenceOrc = Math.random();
-		//System.out.println(intelligenceOrc);
 		if(intelligenceOrc >= 0.5) {
 			orc.setPower(this.getAttack() + (Math.random()+25));
 		} else {
@@ -61,7 +59,6 @@ public class Elf extends Creature{
 		}
 
 		if(nearestCreature!=null) {
-			//System.out.println("\n X: " + nearestCreature.getPosX() + " Y: " + nearestCreature.getPosY());
 			if(this.getPosX() < nearestCreature.getPosX()) {
 				this.setPosX(this.getPosX()+1);
 			} else if(this.getPosX()>nearestCreature.getPosX()){
@@ -73,8 +70,6 @@ public class Elf extends Creature{
 			} else if(this.getPosY()>nearestCreature.getPosY()){
 				this.setPosY(this.getPosY()-1);
 			}	
-		} else {
-			//System.out.println("NUUUUUUUUUUUUUUUUUUUUUUUUULLLLLLLLLLLLLL CREATURE");
 		}
 		
 	}
