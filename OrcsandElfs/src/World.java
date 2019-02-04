@@ -94,13 +94,11 @@ public class World {
 		for(int i = 0 ; i<a.length ; i++) {
 			if(a[i] != null && !a[i].isFighting()) {
 				a[i].move(b);
-			//	System.out.println("MOVING IS RUNNING!!!!!!!!!");
 			}
 		}
 		for(int i = 0 ; i<b.length ; i++) {
 			if(b[i] != null && !b[i].isFighting()) {
 				b[i].move(a);
-			//	System.out.println("MOVING IS RUNNING!!!!!");
 			}
 		}
 	}
