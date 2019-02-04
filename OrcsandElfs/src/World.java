@@ -31,7 +31,7 @@ public class World {
 			artifactsInteraction(weapons,amulets,orcs,elfs);
 			physicsFights(orcs,elfs);
 			lifeComparison(orcs,elfs);
-			//printPositions(orcs,elfs);
+			printPositions(orcs,elfs);
 			artifactsInteraction(weapons,amulets, orcs, elfs);
 			days++;
 		}
