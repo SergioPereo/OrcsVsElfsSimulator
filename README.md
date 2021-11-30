@@ -1,6 +1,6 @@
 # Orcs VS. Elfs Simulator
 
-This is a simple code of the excersice orcs vs elfs made with Java
+This is a simple code of the exersice orcs vs elfs made with Java
 ## Table of contents
 
 * [General Information](#general-information)
